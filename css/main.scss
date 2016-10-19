@@ -1,0 +1,20 @@
+// variables
+$orange: #f9b43b;
+$red: #e45028;
+
+// fonts
+@import "layout/fonts";
+@import "layout/normalize.min";
+@import "layout/mixins";
+@import "layout/adjustment";
+
+// adjustment
+@import "sections/header";
+@import "sections/about";
+@import "sections/burgers";
+@import "sections/team";
+@import "sections/footer";
+@import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";
+@import "media/phones";

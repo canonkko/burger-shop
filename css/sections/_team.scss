@@ -1,0 +1,103 @@
+.team {
+  background: url("../img/bg/team-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    background-color: transparentize(#2f3234, .07);
+  }
+}
+
+.team__content {
+  @extend .about__content;
+  text-align: right;
+}
+
+.team__wrap {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+}
+
+.team__title {
+  color: $orange;
+  margin-bottom: 78px;
+}
+
+.team__acco {
+  margin-left: 20px;
+}
+
+.team__acco-item {
+  margin-bottom: 40px;
+}
+
+.team__trigger-name {
+  font-family: GagalinRegular, sans-serif;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  @include trs();
+
+  &:hover {
+    color: $orange;
+  }
+
+  &::before {
+    content: '';
+    border: 5px solid transparent;
+    border-top: 6px solid $orange;
+    border-bottom: none;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -2px;
+    margin-right: 10px;
+    @include trs(.4s);
+  }
+
+  &.open {
+    color: $orange;
+  }
+
+  &.open::before {
+    transform: rotate(-180deg);
+  }
+}
+
+.team__about {
+  padding-top: 17px;
+}
+
+.team__photo {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 25px;
+}
+
+.team__desc {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.875rem;
+}
+
+.team__desc-title {
+  font-family: UbuntuBold, sans-serif;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.team__desc-text {
+  line-height: 1.6;
+}

@@ -1,0 +1,143 @@
+.burgers {
+  background: $orange;
+  background: linear-gradient(to bottom, $orange 0%,#eb8c38 50%,#eb8c38 50%,$orange 75%);
+}
+
+.burgers__content {
+  @extend .about__content;
+}
+
+.burgers__slide {
+  position: relative;
+}
+
+.burgers__pic {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.burgers__desc {
+  width: 47%;
+  margin-left: 2%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.burgers__title {
+  margin-bottom: 35px;
+}
+
+.burgers__text {
+  font-size: 0.875em;
+  line-height: 1.7;
+  margin: 0 0 25px;
+}
+
+.burgers__price {
+  font-family: GagalinRegular, sans-serif;
+  font-size: 4.5em;
+  line-height: 1;
+  color: $red;
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 30px;
+}
+
+.burgers__price-currency {
+  font-size: 1.875rem;
+  margin-left: -15px;
+}
+
+.burgers__calorie {
+  font-family: GagalinRegular, sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  background: url("../img/icons/kkal.svg") no-repeat;
+  position: absolute;
+  top: 100%;
+  width: 62px;
+  padding-top: 26px;
+  text-align: center;
+  opacity: .6;
+}
+
+.burgers__calorie-unit {
+  font-size: 0.875rem;
+}
+
+.burgers__composition {
+  border-radius: 5px;
+  background: url("../img/icons/burger.svg") center 14px no-repeat;
+  background-color: transparentize($red, .6);
+  position: absolute;
+  bottom: 100%;
+  width: 90px;
+  height: 90px;
+  box-sizing: border-box;
+  cursor: pointer;
+  @include trs();
+
+  &:hover {
+    background-color: $red;
+  }
+
+  &:hover .burgers__ingredients-list {
+    width: 230px;
+    padding: 15px 20px;
+  }
+}
+
+.burgers__ingredients {
+  text-align: center;
+  font-family: GagalinRegular, sans-serif;
+  font-size: 0.875rem;
+  padding-top: 63px;
+}
+
+.burgers__ingredients-list {
+  border-radius: 5px;
+  background-color: transparentize(white, .1);
+  position: absolute;
+  top: 0px;
+  left: 90px;
+  width: 0;
+  color: #2f3234;
+  font-size: 0.875rem;
+  padding: 15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: auto;
+  @include trs();
+}
+
+.burgers__ingredients-item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.burgers__ingredients-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.burgers__ingredients-name {
+  font-family: UbuntuMedium, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  margin-right: 50px;
+}
+
+.burgers__ingredients-weight {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  min-width: 40px;
+}

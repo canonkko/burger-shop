@@ -1,0 +1,100 @@
+.menu {
+  background: url("../img/bg/menu-bg.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.menu__title {
+  margin-top: 15vh;
+  display: inline-block;
+}
+
+.menu-acco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menu-acco__item {
+  height: 100%;
+  float: left;
+
+  &:hover .menu__trigger-text {
+    color: #fff;
+  }
+
+  &.active .menu__trigger-text {
+    color: $orange;
+    top: 75%;
+  }
+}
+
+.menu__trigger {
+  height: 100%;
+  width: 80px;
+  font-family: GagalinRegular, sans-serif;
+  font-size: 2.5em;
+  float: left;
+  cursor: pointer;
+
+  &:hover .menu__trigger-text {
+    color: $orange;
+  }
+}
+
+.menu__trigger_meat {
+  background: url("../img/bg/menu_trigger-meat.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+.menu__trigger_vegan {
+  background: url("../img/bg/menu_trigger-vegan.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+.menu__trigger_diet {
+  background: url("../img/bg/menu_trigger-diet.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+.menu__trigger-text {
+  display: block;
+  height: 80px;
+  width: 650px;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -270px;
+  text-align: center;
+  @include trs();
+}
+
+.menu-acco__content {
+  font-size: 0.875em;
+  line-height: 1.7;
+  width: 0;
+  height: 100%;
+  float: left;
+  text-align: left;
+  background-color: transparentize(#2f3234, .07);
+}
+
+.menu-acco__content-text {
+  padding: 60px 0;
+  width: 470px;
+  margin: auto;
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(-15px);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}

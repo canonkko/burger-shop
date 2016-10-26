@@ -1,0 +1,109 @@
+.comments__list {
+  @extend %clearfix;
+}
+
+.comments__item {
+  width: 25%;
+  min-height: 50vh;
+  float: left;
+  background-image: url("../img/content/comments-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  position: relative;
+
+  &:hover .comments__overlay {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/content/comments-photo-2.jpg");
+  }
+  &:nth-child(3) {
+    background-image: url("../img/content/comments-photo-3.jpg");
+  }
+  &:nth-child(4) {
+    background-image: url("../img/content/comments-photo-4.jpg");
+  }
+  &:nth-child(5) {
+    background-image: url("../img/content/comments-photo-5.jpg");
+  }
+  &:nth-child(6) {
+    background-image: url("../img/content/comments-photo-6.jpg");
+  }
+  &:nth-child(7) {
+    background-image: url("../img/content/comments-photo-7.jpg");
+  }
+  &:nth-child(8) {
+    background-image: url("../img/content/comments-photo-8.jpg");
+  }
+}
+
+.comments__overlay {
+  font-size: 0.875em;
+  padding: 50px 30px 45px;
+  background-color: transparentize(#141414, .3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: scale(.9);
+  @include trs();
+}
+
+.comments__title {
+  font-family: GagalinRegular, sans-serif;
+  margin-bottom: 20px;
+}
+
+.comments__text {
+  margin-bottom: 20px;
+}
+
+.comments__btn {
+  background-color: #2f3234;
+
+  &:hover {
+    background-color: #1f2122;
+  }
+}
+
+// popup-comments
+
+.popup-comments {
+  width: 460px;
+  background-color: white;
+  border-radius: 5px;
+  color: #2f3234;
+  padding: 20px;
+  font-size: 0.875rem;
+}
+
+.popup-comments__btn-close {
+  content: "";
+  width: 15px;
+  height: 15px;
+  opacity: 0.7;
+  background: url(../img/icons/close.svg) no-repeat;
+  position: absolute;
+  right: 20px;
+  border: none;
+  outline: none;
+  @include trs();
+
+  &:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+}
+
+.popup-comments__title {
+  font-family: GagalinRegular, sans-serif;
+}
+
+.popup-comments__text {
+  margin-bottom: 0;
+  line-height: 1.8;
+}

@@ -7,8 +7,50 @@
   @extend .about__content;
 }
 
+.burger__slider {
+  position: relative;
+}
+
 .burgers__slide {
   position: relative;
+  padding: 90px 0 80px;
+}
+
+.owl-stage-outer {
+  overflow: hidden;
+}
+
+.owl-stage {
+  @extend %clearfix;
+}
+
+.owl-item {
+  float: left;
+}
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.owl-prev,
+.owl-next {
+  width: 30px;
+  position: absolute;
+  bottom: 270px;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.owl-prev {
+  transform: rotate(90deg);
+  left: -40px;
+}
+
+.owl-next {
+  transform: rotate(-90deg);
+  right: -40px;
 }
 
 .burgers__pic {
@@ -55,7 +97,7 @@
   text-transform: uppercase;
   background: url("../img/icons/kkal.svg") no-repeat;
   position: absolute;
-  top: 100%;
+  bottom: 0;
   width: 62px;
   padding-top: 26px;
   text-align: center;
@@ -71,11 +113,12 @@
   background: url("../img/icons/burger.svg") center 14px no-repeat;
   background-color: transparentize($red, .6);
   position: absolute;
-  bottom: 100%;
+  outline: none;
+  top: 0;
+  left: 0;
+  border: none;
   width: 90px;
   height: 90px;
-  box-sizing: border-box;
-  cursor: pointer;
   @include trs();
 
   &:hover {
@@ -83,7 +126,7 @@
   }
 
   &:hover .burgers__ingredients-list {
-    width: 230px;
+    width: 270px;
     padding: 15px 20px;
   }
 }
@@ -133,6 +176,7 @@
   vertical-align: middle;
   width: 60px;
   margin-right: 50px;
+  text-align: left;
 }
 
 .burgers__ingredients-weight {

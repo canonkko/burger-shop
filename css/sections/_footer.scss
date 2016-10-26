@@ -1,3 +1,51 @@
 .footer {
-  
+  height: 60px;
+  background: url("../img/bg/footer-bg.jpg") 50% 50% no-repeat;
+	background-size: cover;
+	padding: 10px 0;
+}
+
+.footer__left {
+	width: 50%;
+	float: left;
+	font-size: 0.875rem;
+}
+
+.footer__right {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.footer__address {
+	margin-bottom: 4px;
+}
+
+.footer__phone {
+	font-family: UbuntuBold, sans-serif;
+	color: #e45028;
+	padding-left: 20px;
+	background: url("../img/icons/phone.svg") 0 50% no-repeat;
+}
+
+.socials {
+	display: inline-block;
+	margin-top: 8px;
+}
+
+.socials__item {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 16px;
+}
+
+.socials__link {
+	opacity: .5;
+	@include trs();
+
+	&:hover {
+		opacity: 1;
+	}
 }

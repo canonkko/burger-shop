@@ -1,28 +1,23 @@
 .team {
-  background: url("../img/bg/team-bg.jpg") 50% 50% no-repeat;
+  background: url("../img/bg/team-bg.jpg") 50% 0 no-repeat;
   background-size: cover;
   position: relative;
-
-  &::before {
-    content: "";
-    width: 50%;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    left: 50%;
-    background-color: transparentize(#2f3234, .07);
-  }
 }
 
 .team__content {
   @extend .about__content;
-  text-align: right;
+  position: absolute;
+  margin-top: 60px;
 }
 
 .team__wrap {
-  display: inline-block;
-  text-align: left;
-  width: 40%;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  padding: 0 80px;
+  background-color: transparentize(#2f3234, .07);
 }
 
 .team__title {
@@ -32,10 +27,15 @@
 
 .team__acco {
   margin-left: 20px;
+  min-height: 330px;
 }
 
 .team__acco-item {
   margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .team__trigger-name {
@@ -57,22 +57,22 @@
     position: absolute;
     right: 100%;
     top: 50%;
-    margin-top: -2px;
+    margin-top: -3px;
     margin-right: 10px;
     @include trs(.4s);
   }
 
-  &.open {
+  &.active {
     color: $orange;
   }
 
-  &.open::before {
+  &.active::before {
     transform: rotate(-180deg);
   }
 }
 
 .team__about {
-  padding-top: 17px;
+  margin-top: 17px;
 }
 
 .team__photo {
@@ -86,7 +86,7 @@
 }
 
 .team__desc {
-  width: 60%;
+  width: 40%;
   display: inline-block;
   vertical-align: top;
   font-size: 0.875rem;

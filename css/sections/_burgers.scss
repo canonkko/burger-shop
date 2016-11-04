@@ -7,25 +7,13 @@
   @extend .about__content;
 }
 
-.burger__slider {
+.burger-slider {
   position: relative;
 }
 
 .burgers__slide {
   position: relative;
   padding: 90px 0 80px;
-}
-
-.owl-stage-outer {
-  overflow: hidden;
-}
-
-.owl-stage {
-  @extend %clearfix;
-}
-
-.owl-item {
-  float: left;
 }
 
 .owl-nav {
@@ -145,7 +133,7 @@
   top: 0px;
   left: 90px;
   width: 0;
-  color: #2f3234;
+  color: $gray;
   font-size: 0.875rem;
   padding: 15px 0;
   overflow: hidden;

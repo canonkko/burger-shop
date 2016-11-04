@@ -63,10 +63,10 @@
 }
 
 .comments__btn {
-  background-color: #2f3234;
+  background-color: $gray;
 
   &:hover {
-    background-color: #1f2122;
+    background-color: darken($gray, 3%);
   }
 }
 
@@ -76,13 +76,12 @@
   width: 460px;
   background-color: white;
   border-radius: 5px;
-  color: #2f3234;
+  color: $gray;
   padding: 20px;
   font-size: 0.875rem;
 }
 
 .popup-comments__btn-close {
-  content: "";
   width: 15px;
   height: 15px;
   opacity: 0.7;

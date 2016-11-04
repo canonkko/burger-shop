@@ -76,10 +76,11 @@
   font-size: 0.875em;
   line-height: 1.7;
   width: 0;
+  opacity: 0;
   height: 100%;
   float: left;
   text-align: left;
-  background-color: transparentize(#2f3234, .07);
+  background-color: rgba($gray, .93);
 }
 
 .menu-acco__content-text {
@@ -88,13 +89,13 @@
   margin: auto;
 }
 
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(-15px);
-	}
-	100% {
-		opacity: 1;
-		transform: none;
-	}
-}
+/* @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+} */

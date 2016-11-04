@@ -38,7 +38,7 @@ input,
 textarea {
 	display: block;
 	outline: none;
-	color: #2f3234;
+	color: $gray;
 	margin-top: 7px;
 }
 
@@ -128,11 +128,9 @@ textarea {
 }
 
 .form__input-payment:checked + .form__label-payment:before {
-	content: "\2022";
-	color: $red;
-	font-size: 33px;
-	text-align: center;
-	line-height: 12px;
+	background-color: $red;
+	border: 4px solid white;
+	box-sizing: border-box;
 }
 
 .form__input-callback {
@@ -178,15 +176,21 @@ textarea {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: transparentize(#2f3234, .07);
+  background-color: rgba($gray, .93);
   display: none;
 }
 
 .popup-form__content {
-	@extend .popup-comments__content;
-	width: 196px;
-	padding: 20px 10px;
+	width: 206px;
+	background-color: #fff;
+	color: $gray;
+	padding: 20px 5px;
 	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
 	box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
 }
 

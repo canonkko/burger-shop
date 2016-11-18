@@ -1,3 +1,8 @@
+//@prepros-prepend jquery.fullpage.min.js
+//@prepros-prepend owl.carousel.min.js
+//@prepros-prepend jquery.bpopup.min.js
+//@prepros-prepend jquery.inputmask.min.js
+
 $(document).ready(function() {
 
   // fullpage
@@ -115,7 +120,10 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-      PopupForm.bPopup();
+      PopupForm.bPopup({
+        modalColor: "#2f3234",
+        opacity: 0.93
+      });
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -133,7 +141,7 @@ $(document).ready(function() {
   ymaps.ready(init);
     var myMap;
 
-    function init() {     
+    function init() {
       myMap = new ymaps.Map("map", {
           center: [59.91815363876071,30.30557799999997],
           zoom: 12,
@@ -196,5 +204,13 @@ $(document).ready(function() {
       }, 'xml');
 
   });
+
+});
+
+$(window).load(function() {
+
+	$("body").animate({
+    opacity: 1
+  }, 500, "linear");
 
 });

@@ -169,29 +169,15 @@ textarea {
 }
 
 // popup-form
-
 .popup-form {
-	position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba($gray, .93);
-  display: none;
-}
-
-.popup-form__content {
 	width: 206px;
 	background-color: #fff;
 	color: $gray;
 	padding: 20px 5px;
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	border-radius: 5px;
 	box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+	display: none;
 }
 
 .popup-form__text {

@@ -97,14 +97,13 @@
 }
 
 .burgers__composition {
+  color: #fff;
   border-radius: 5px;
   background: url("../img/icons/burger.svg") center 14px no-repeat;
   background-color: transparentize($red, .6);
   position: absolute;
-  outline: none;
   top: 0;
   left: 0;
-  border: none;
   width: 90px;
   height: 90px;
   @include trs();

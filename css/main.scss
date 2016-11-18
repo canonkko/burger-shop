@@ -3,11 +3,15 @@ $orange: #f9b43b;
 $red: #e45028;
 $gray: #2f3234;
 
-// fonts
+// base
 @import "layout/fonts";
 @import "layout/normalize.min";
 @import "layout/mixins";
 @import "layout/adjustment";
+
+// libs
+@import "libs/jquery.fullpage.min.scss";
+@import "libs/owl.carousel.min.scss";
 
 // adjustment
 @import "sections/header";
@@ -18,7 +22,3 @@ $gray: #2f3234;
 @import "sections/comments";
 @import "sections/order";
 @import "sections/map";
-@import "media/desktop";
-@import "media/laptop";
-@import "media/tablets";
-@import "media/phones";

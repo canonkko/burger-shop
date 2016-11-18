@@ -24,8 +24,6 @@ a></p>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/jquery.fullpage.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -34,7 +32,7 @@ a></p>
 
 	<div class="wrapper">
 		<div class="maincontent">
-			<section class="hero section active">
+			<section class="hero section">
 				<div class="container">
 					<header class="header">
 						<div class="header__logo">
@@ -73,27 +71,28 @@ a></p>
 				</div>
 			</section>
 
+
 			<section class="about section">
 				<div class="about__content">
 					<h2 class="about__title">Мы лучшие</h2>
 					<div class="container">
 						<div class="about__item">
 							<div class="about__icon">
-								<img src="img/icons/meat.svg" alt="">
+								<img src="img/icons/meat.svg" alt="meat">
 							</div>
 							<h3 class="about__item-title">100% свежее мясо</h3>
 							<p class="about__decs">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
 						</div>
 						<div class="about__item">
 							<div class="about__icon">
-								<img src="img/icons/hand.svg" alt="">
+								<img src="img/icons/hand.svg" alt="hand">
 							</div>
 							<h3 class="about__item-title">Ручная сборка</h3>
 							<p class="about__decs">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
 						</div>
 						<div class="about__item">
 							<div class="about__icon">
-								<img src="img/icons/natural.svg" alt="">
+								<img src="img/icons/natural.svg" alt="natural">
 							</div>
 							<h3 class="about__item-title">Натуральные ингредиенты</h3>
 							<p class="about__decs">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
@@ -101,6 +100,7 @@ a></p>
 					</div>
 				</div>
 			</section>
+
 
 			<section class="burgers section">
 				<div class="burgers__content">
@@ -117,7 +117,7 @@ a></p>
 									<a href="7" class="burgers__btn btn">Заказать</a>
 								</div>
 								<div class="burgers__calorie">1200 <span class="burgers__calorie-unit">ккал</span></div>
-								<button class="burgers__composition">
+								<a href="#" class="burgers__composition">
 									<div class="burgers__ingredients">Состав</div>
 									<ul class="burgers__ingredients-list">
 										<li class="burgers__ingredients-item">
@@ -163,7 +163,7 @@ a></p>
 											<div class="burgers__ingredients-weight">80 г</div>
 										</li>
 									</ul>
-								</button>
+								</a>
 							</div>
 							<div class="burgers__slide">
 								<div class="burgers__pic">
@@ -176,7 +176,7 @@ a></p>
 									<a href="7" class="burgers__btn btn">Заказать</a>
 								</div>
 								<div class="burgers__calorie">1200 <span class="burgers__calorie-unit">ккал</span></div>
-								<button class="burgers__composition">
+								<a href="#" class="burgers__composition">
 									<div class="burgers__ingredients">Состав</div>
 									<ul class="burgers__ingredients-list">
 										<li class="burgers__ingredients-item">
@@ -222,7 +222,7 @@ a></p>
 											<div class="burgers__ingredients-weight">80 г</div>
 										</li>
 									</ul>
-								</button>
+								</a>
 							</div>
 							<div class="burgers__slide">
 								<div class="burgers__pic">
@@ -235,7 +235,7 @@ a></p>
 									<a href="7" class="burgers__btn btn">Заказать</a>
 								</div>
 								<div class="burgers__calorie">1200 <span class="burgers__calorie-unit">ккал</span></div>
-								<button class="burgers__composition">
+								<a href="#" class="burgers__composition">
 									<div class="burgers__ingredients">Состав</div>
 									<ul class="burgers__ingredients-list">
 										<li class="burgers__ingredients-item">
@@ -281,15 +281,15 @@ a></p>
 											<div class="burgers__ingredients-weight">80 г</div>
 										</li>
 									</ul>
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="team section">
 
+			<section class="team section">
 				<div class="team__wrap">
 					<div class="team__content">
 						<h2 class="team__title">Команда</h2>
@@ -347,6 +347,7 @@ a></p>
 				</div>
 			</section>
 
+
 			<section class="menu section">
 				<div class="container">
 					<h2 class="menu__title">Меню</h2>
@@ -378,6 +379,7 @@ a></p>
 					</li>
 				</ul>
 			</section>
+
 
 			<section class="comments section">
 				<ul class="comments__list">
@@ -440,6 +442,7 @@ a></p>
 				</ul>
 			</section>
 
+
 			<section class="order section">
 				<div class="order__content">
 					<div class="container">
@@ -451,8 +454,8 @@ a></p>
 							<input type="hidden" name="form_subject" value="Форма Burger-shop">
 							<!-- END Hidden Required Fields -->
 							<div class="form__left">
-								<label class="form__label-name">Имя<input class="form__input-name form__input_left" name="Имя" type="text"></label>
-								<label>Телефон<input class="form__input-phone form__input_left" name="Телефон" type="text"></label>
+								<label class="form__label-name">Имя<input class="form__input-name form__input_left" name="Имя" type="text" required></label>
+								<label>Телефон<input class="form__input-phone form__input_left" name="Телефон" type="text" required></label>
 								<label class="form__label-street">Улица<input class="form__input-street form__input_left" name="Улица" type="text"></label>
 								<div class="form__address-content">
 									<label class="form__label-address">Дом<input class="form__input-address form__input_left" name="Дом" type="text"></label>
@@ -466,7 +469,7 @@ a></p>
 								<div class="form__radio-content">
 									<input class="form__input-payment" type="radio" id="cashback" name="payment">
 									<label class="form__label-payment" for="cashback">Потребуется сдача</label>
-									<input class="form__input-payment" type="radio" id="card" name="payment">
+									<input class="form__input-payment" type="radio" id="card" name="payment" checked>
 									<label class="form__label-payment" for="card">Оплата по карте</label>
 								</div>
 								<input class="form__input-callback" name="callback" type="checkbox" id="callback">
@@ -480,6 +483,7 @@ a></p>
 					</div>
 				</div>
 			</section>
+
 
 			<section class="map section">
 				<div id="map"></div>
@@ -508,8 +512,14 @@ a></p>
 					</div>
 				</footer>
 			</section>
+
+
 		</div>
+
+
 	</div>
+
+
 	<ul class="fixed-menu">
 		<li data-menuanchor="1" class="fixed-menu__items active">
 			<a href="#1" class="fixed-menu__link"></a>
@@ -542,12 +552,12 @@ a></p>
 		<p class="popup-comments__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
 			забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 	</div>
+
 	<div class="popup-form">
-		<div class="popup-form__content">
-			<div class="popup-form__text">Сообщение отправлено</div>
-			<button class="btn popup-form__btn-close">Закрыть</button>
-		</div>
+		<div class="popup-form__text">Сообщение отправлено</div>
+		<button class="btn popup-form__btn-close">Закрыть</button>
 	</div>
+
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -559,11 +569,11 @@ a></p>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-	<script src="js/jquery.fullpage.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.bpopup.min.js"></script>
-	<script src="js/jquery.inputmask.min.js"></script>
-	<script src="js/common.js"></script>
+	<!-- <script src="js/jquery.fullpage.min.js"></script> -->
+	<!-- <script src="js/owl.carousel.min.js"></script> -->
+	<!-- <script src="js/jquery.bpopup.min.js"></script> -->
+	<!-- <script src="js/jquery.inputmask.min.js"></script> -->
+	<script src="js/common-dist.js"></script>
 </body>
 
 </html>
